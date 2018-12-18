@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => (
-  <nav className="container">
+  <nav className="Nav">
     <ul>
       <Link to="/">
         <li className="nav-btn">WELCOME</li>

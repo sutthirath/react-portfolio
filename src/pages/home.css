@@ -1,6 +1,5 @@
-.container {
+.Home {
   background-image: url("../images/sean_art1.jpg");
-  height: 1200px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +15,6 @@
 
 .wrapper {
   margin-top: 4em;
-  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -36,6 +34,12 @@
   height: 120px;
   width: 250px;
   padding: 10px;
+  background: -webkit-linear-gradient(
+    rgba(255, 0, 183, 0.694),
+    rgb(255, 111, 0)
+  );
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
 }
 
 .card-left:after {
@@ -66,19 +70,11 @@
   margin-bottom: -1.531em;
 }
 
-.about1 {
-  background-color: #ff8a5b;
-}
-
-.about1:after {
-  border-top-color: #ff8a5b;
-}
-
 .about2 {
-  background-color: #54c6eb;
   margin-top: 9em;
 }
 
+.about1:after,
 .about2:after {
-  border-top-color: #54c6eb;
+  border-top-color: rgb(255, 111, 0);
 }

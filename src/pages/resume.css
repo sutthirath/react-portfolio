@@ -18,6 +18,12 @@
 .resume-btn:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.1);
+  background: -webkit-linear-gradient(
+    rgba(255, 0, 183, 0.694),
+    rgb(255, 111, 0)
+  );
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
 }
 
 .resume-btn:focus {

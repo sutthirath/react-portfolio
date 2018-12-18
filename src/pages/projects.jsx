@@ -4,21 +4,19 @@ import seattle_transit_icon from "../images/seattle_transit_icon.png";
 import yocal_logo from "../images/yocal_logo.png";
 
 const Projects = () => (
-  <div>
+  <div className="Projects">
     {/* Yocal Section */}
-    <section className="project-section section-hero1">
+    <div className="center hero1">
+      <img src={yocal_logo} width={`${300}em`} height={`${300}em`} />
+    </div>
+    <div className="center giph1">
       <img
-        className="yocal-img"
-        src={yocal_logo}
-        width={`${400}em`}
-        height={`${400}em`}
+        className="giphyOne"
+        src="https://media.giphy.com/media/63LM6J7Vr5RLlWKvY6/giphy.gif"
       />
-    </section>
-    <section className="project-section section-info1">
-      <div className="yocal-gif">
-        <img src="https://media.giphy.com/media/63LM6J7Vr5RLlWKvY6/giphy.gif" />
-      </div>
-      <div className="details">
+    </div>
+    <div className="align details1">
+      <div>
         <h4>A Social App for Curious Travelers.</h4>
         <p>
           Explore the unknown or get help from locals. Yocal is mobile app using
@@ -42,14 +40,14 @@ const Projects = () => (
           <button className="projects-btn right-btn">View App</button>
         </a>
       </div>
-    </section>
-    <hr />
+    </div>
+    <hr className="line divider1" />
     {/* Seattle Transit Section */}
-    <section className="project-section">
-      <img src={seattle_transit_icon} width={`${400}em`} height={`${400}em`} />
-    </section>
-    <section className="project-section section-info2">
-      <div className="details">
+    <div className="center hero2">
+      <img src={seattle_transit_icon} width={`${350}em`} height={`${350}em`} />
+    </div>
+    <div className="align details2">
+      <div>
         <h4>Simple and Easy to Use Public Transit App.</h4>
         <p>
           An interactive public transit app for the Seattle, WA area. Created
@@ -72,25 +70,28 @@ const Projects = () => (
           <button className="projects-btn right-btn">View App</button>
         </a>
       </div>
-      <div className="seattle-transit-gif">
-        <img src="https://media.giphy.com/media/Ah9wTBkfaxZpKuUwpI/giphy.gif" />
-      </div>
-    </section>
-    <hr />
-
+    </div>
+    <div className="center giph2">
+      <img
+        className="giphyOne"
+        src="https://media.giphy.com/media/Ah9wTBkfaxZpKuUwpI/giphy.gif"
+      />
+    </div>
+    <hr className="line divider2" />
     {/* Bug Invaders Section */}
-    <section className="project-section section-hero3">
+    <div className="center hero3">
       <h2 className="bug-invaders">BUG INVADERS</h2>
-    </section>
-    <section className="project-section section-info3">
+    </div>
+    <div className="center giph3">
+      <img
+        className="giphyTwo"
+        src="https://media.giphy.com/media/1kTOfry9f5sxuYM3Fa/giphy.gif"
+        width={`${900}em`}
+        height={`${200}em`}
+      />
+    </div>
+    <div className="align details3">
       <div>
-        <img
-          src="https://media.giphy.com/media/1kTOfry9f5sxuYM3Fa/giphy.gif"
-          width={`${900}em`}
-          height={`${200}em`}
-        />
-      </div>
-      <div className="details">
         <h4>"Addictive" "Fun" "Cool Game"</h4>
         <p>
           Lightweight web browser game that is built with intuiutive javascript.
@@ -112,8 +113,8 @@ const Projects = () => (
           <button className="projects-btn right-btn">Play Game</button>
         </a>
       </div>
-    </section>
-    <hr />
+    </div>
+    <hr className="line divider3" />
   </div>
 );
 

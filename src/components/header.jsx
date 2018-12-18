@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Nav from "./nav.jsx";
+import "./header.css";
 import logo from "../images/sean_flash.jpg";
 
 const Header = () => (
-  <div className="container">
+  <div className="Header">
     <Link to="/">
-      <img className="logo" src={logo} />
+      <div>
+        <img className="logo-img" src={logo} />
+      </div>
     </Link>
-    <Nav />
+    <div>
+      <Nav />
+    </div>
   </div>
 );
 

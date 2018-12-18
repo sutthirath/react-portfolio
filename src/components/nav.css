@@ -1,8 +1,8 @@
-.container {
+.Nav {
   display: flex;
   justify-content: flex-end;
   width: 60vw;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -16,5 +16,11 @@ li {
 }
 
 .nav-btn:hover {
-  -webkit-text-stroke: 1px lightblue;
+  background: -webkit-linear-gradient(
+    rgba(255, 0, 183, 0.694),
+    rgb(255, 111, 0)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
