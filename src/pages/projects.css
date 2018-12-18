@@ -1,0 +1,73 @@
+.project-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-hero1 {
+  padding-top: 2em;
+}
+
+.section-info1 {
+  padding-bottom: 3em;
+}
+
+.section-info2 {
+  padding-bottom: 4em;
+}
+
+.section-hero3 {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.section-info3 {
+  padding-bottom: 2em;
+}
+
+.bug-invaders {
+  font-family: 'luckiest guy';
+  font-size: 4em;
+  -webkit-text-stroke: 1px black;
+  color: #5da81f;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.details {
+  padding: 0 50px;
+}
+
+.seattle-transit-gif {
+  transform: rotate(90deg);
+  width: 100%;
+  height: auto;
+}
+
+.yocal-img {
+  margin: 0;
+}
+
+.yocal-gif {
+  transform: rotate(90deg);
+  width: 100%;
+  height: auto;
+}
+
+.projects-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px #3d3d3d8f;
+}
+
+.projects-btn:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.projects-btn:focus {
+  outline: none;
+}
+
+.right-btn {
+  margin-left: 10px;
+}

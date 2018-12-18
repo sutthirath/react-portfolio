@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #000000;
+  font-family: 'lato', 'sans-serif';
+  font-size: 14px;
+}
