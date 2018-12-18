@@ -17,26 +17,30 @@ class Resume extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Resume">
         <div className="resume-btns">
-          <button onClick={this.handlePrint} className="resume-btn">
-            Print
-            <i className="fas fa-print resume-i" />
-          </button>
-          <a href={pdf} download="SeanVilaysaneResume">
-            <button className="resume-btn">
-              Download
-              <i className="fas fa-file-download resume-i" />
+          <div className="center-btn">
+            <button onClick={this.handlePrint} className="resume-btn">
+              Print
+              <i className="fas fa-print resume-i" />
             </button>
-          </a>
+          </div>
+          <div>
+            <a href={pdf} download="SeanVilaysaneResume">
+              <button className="resume-btn">
+                Download
+                <i className="fas fa-file-download resume-i" />
+              </button>
+            </a>
+          </div>
         </div>
-        <span>
+        <div>
           <iframe
             className="doc"
             src="https://docs.google.com/document/d/e/2PACX-1vShfItfp3NVP7l9vHCe9n6KhorFeGihxKYq6lDLroTZphAyXR3hPdSD30mch8HuibvN-BL1YgFGSlz_/pub?embedded=true"
             frameBorder="1"
           />
-        </span>
+        </div>
       </div>
     );
   }

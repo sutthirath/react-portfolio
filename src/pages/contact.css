@@ -42,6 +42,8 @@ section {
 }
 
 .contact-form {
+  display: flex;
+  justify-content: center;
   width: 40vw;
   height: 90vh;
   padding-right: 30px;

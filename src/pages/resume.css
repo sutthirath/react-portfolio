@@ -1,11 +1,22 @@
+.Resume {
+  display: flex;
+  align-items: center;
+}
+
 .resume-btns {
+  display: block;
+  margin: auto;
+}
+
+.center-btn {
   display: flex;
   justify-content: center;
 }
 
 .doc {
-  height: 100vh;
-  width: 78vw;
+  padding-top: 1em;
+  height: 79vh;
+  width: 75vw;
 }
 
 .resume-btn {
