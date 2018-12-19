@@ -30,7 +30,7 @@ const Contact = () => (
     </div>
     <section>
       <div className="contact-form">
-        <form method="POST" name="portfolio-msg" data-netlify="true">
+        <form method="POST" name="portfolio-msg" netlify>
           <label htmlFor="name">
             Name:
             <input className="contact-input" type="text" name="name" />
@@ -51,6 +51,7 @@ const Contact = () => (
             className="contact-textarea"
             placeholder="send me a message"
           />
+          <div data-netlify-recaptcha="true" />
           <button className="send-btn" type="submit">
             Send
           </button>
