@@ -53,7 +53,11 @@ const Contact = () => (
             placeholder="send me a message"
             name="message"
           />
-          <div data-netlify-recaptcha="true" />
+          <div
+            className="g-recaptcha"
+            data-sitekey="SITE_RECAPTCHA_KEY"
+            data-netlify-recaptcha="true"
+          />
           <button className="send-btn" type="submit">
             Send
           </button>
