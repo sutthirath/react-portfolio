@@ -30,7 +30,7 @@ const Contact = () => (
     </div>
     <section>
       <div className="contact-form">
-        <form method="POST">
+        <form method="POST" name="portfolio-msg" data-netlify="true">
           <label htmlFor="name">
             Name:
             <input className="contact-input" type="text" name="name" />
