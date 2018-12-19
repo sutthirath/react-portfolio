@@ -45,20 +45,22 @@
       action="/"
       name="portfolio-msg"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       hidden
     >
       <input type="hidden" name="form-name" value="portfolio-msg" />
-      <input className="contact-input" type="text" name="name" />
-      <input className="contact-input" type="text" name="company" />
-      <input className="contact-input" type="email" name="email" />
-      <input className="contact-input" type="tel" name="phone" />
+      <input name="bot-field" />
+      <input class="contact-input" type="text" name="name" />
+      <input class="contact-input" type="text" name="company" />
+      <input class="contact-input" type="email" name="email" />
+      <input class="contact-input" type="tel" name="phone" />
       <textarea
-        className="contact-textarea"
+        class="contact-textarea"
         placeholder="send me a message"
         name="message"
       ></textarea>
       <div class="g-recaptcha" data-netlify-recaptcha="true"></div>
-      <button className="send-btn" type="submit">Send</button>
+      <button class="send-btn" type="submit">Send</button>
     </form>
 
     <!--

@@ -30,8 +30,19 @@ const Contact = () => (
     </div>
     <section>
       <div className="contact-form">
-        <form method="post" action="/" name="portfolio-msg" data-netlify="true">
+        <form
+          method="post"
+          action="/"
+          name="portfolio-msg"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <input type="hidden" name="form-name" value="portfolio-msg" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           <label>
             Name:
             <input className="contact-input" type="text" name="name" />
