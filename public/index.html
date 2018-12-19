@@ -50,16 +50,17 @@
     >
       <input type="hidden" name="form-name" value="portfolio-msg" />
       <input name="bot-field" />
-      <input class="contact-input" type="text" name="name" />
+      <input class="contact-input" type="text" name="name" required />
       <input class="contact-input" type="text" name="company" />
-      <input class="contact-input" type="email" name="email" />
+      <input class="contact-input" type="email" name="email" required />
       <input class="contact-input" type="tel" name="phone" />
       <textarea
         class="contact-textarea"
         placeholder="send me a message"
         name="message"
+        required
       ></textarea>
-      <div class="g-recaptcha" data-netlify-recaptcha="true"></div>
+      <div data-netlify-recaptcha="true"></div>
       <button class="send-btn" type="submit">Send</button>
     </form>
 

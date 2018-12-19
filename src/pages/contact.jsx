@@ -32,20 +32,17 @@ const Contact = () => (
       <div className="contact-form">
         <form
           method="post"
-          action="/"
           name="portfolio-msg"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="portfolio-msg" />
-          <p class="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
+          <label class="hidden">
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
           <label>
             Name:
-            <input className="contact-input" type="text" name="name" />
+            <input className="contact-input" type="text" name="name" required />
           </label>
           <label>
             Company:
@@ -53,7 +50,12 @@ const Contact = () => (
           </label>
           <label>
             Email:
-            <input className="contact-input" type="email" name="email" />
+            <input
+              className="contact-input"
+              type="email"
+              name="email"
+              required
+            />
           </label>
           <label>
             Phone:
@@ -63,8 +65,9 @@ const Contact = () => (
             className="contact-textarea"
             placeholder="send me a message"
             name="message"
+            required
           />
-          <div className="g-recaptcha" data-netlify-recaptcha="true" />
+          <div data-netlify-recaptcha="true" />
           <button className="send-btn" type="submit">
             Send
           </button>
