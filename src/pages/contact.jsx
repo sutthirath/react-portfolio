@@ -38,7 +38,8 @@ const Contact = () => (
         >
           <input type="hidden" name="form-name" value="portfolio-msg" />
           <label class="hidden">
-            Don’t fill this out if you're human: <input name="bot-field" />
+            Don’t fill this out if you're human:
+            <input className="contact-input" type="text" name="bot-field" />
           </label>
           <label>
             Name:
