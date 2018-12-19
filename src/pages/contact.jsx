@@ -31,7 +31,7 @@ const Contact = () => (
     <section>
       <div className="contact-form">
         <form method="POST" name="portfolio-msg" data-netlify="true">
-          <input type="hidden" name="portfolio-msg" value="portfolio-msg" />
+          <input type="hidden" name="form-name" value="portfolio-msg" />
           <label>
             Name:
             <input className="contact-input" type="text" name="name" />
