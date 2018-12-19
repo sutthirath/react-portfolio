@@ -39,6 +39,20 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
+
+    <form method="post" name="portfolio-msg" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="portfolio-msg" />
+      <input className="contact-input" type="text" name="name" />
+      <input className="contact-input" type="text" name="company" />
+      <input className="contact-input" type="email" name="email" />
+      <input className="contact-input" type="tel" name="phone" />
+      <textarea
+        className="contact-textarea"
+        placeholder="send me a message"
+      ></textarea>
+      <button className="send-btn" type="submit">Send</button>
+    </form>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
