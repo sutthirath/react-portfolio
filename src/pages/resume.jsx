@@ -5,10 +5,7 @@ import pdf from "../images/resume.pdf";
 class Resume extends React.Component {
   handlePrint = () => {
     var myWindow = window.open("", "Resume", "width=800, height=600");
-    myWindow.document.write(`<iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vShfItfp3NVP7l9vHCe9n6KhorFeGihxKYq6lDLroTZphAyXR3hPdSD30mch8HuibvN-BL1YgFGSlz_/pub?embedded=true",
-      width="1000" height="1000" frameBorder="0"
-    />`);
+    myWindow.document.write(`<img src="https://i.imgur.com/WUboXzK.png" />`);
     myWindow.document.close();
     myWindow.focus();
     myWindow.print();
@@ -34,12 +31,14 @@ class Resume extends React.Component {
             </a>
           </div>
         </div>
-        <div>
-          <iframe
-            className="doc"
-            src="https://docs.google.com/document/d/e/2PACX-1vShfItfp3NVP7l9vHCe9n6KhorFeGihxKYq6lDLroTZphAyXR3hPdSD30mch8HuibvN-BL1YgFGSlz_/pub?embedded=true"
-            frameBorder="1"
-          />
+        <div className="doc-wrapper">
+          <div className="doc-container">
+            <img
+              src="https://i.imgur.com/WUboXzK.png"
+              className="doc"
+              alt="resume"
+            />
+          </div>
         </div>
       </div>
     );

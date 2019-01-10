@@ -7,12 +7,18 @@ const Projects = () => (
   <div className="Projects">
     {/* Yocal Section */}
     <div className="center hero1">
-      <img src={yocal_logo} width={`${300}em`} height={`${300}em`} />
+      <img
+        src={yocal_logo}
+        width={`${300}em`}
+        height={`${300}em`}
+        alt="yocal"
+      />
     </div>
     <div className="center giph1">
       <img
         className="giphyOne"
         src="https://media.giphy.com/media/63LM6J7Vr5RLlWKvY6/giphy.gif"
+        alt="yocal-gif"
       />
     </div>
     <div className="align details1">
@@ -44,7 +50,12 @@ const Projects = () => (
     <hr className="line divider1" />
     {/* Seattle Transit Section */}
     <div className="center hero2">
-      <img src={seattle_transit_icon} width={`${350}em`} height={`${350}em`} />
+      <img
+        src={seattle_transit_icon}
+        width={`${350}em`}
+        height={`${350}em`}
+        alt="seattle-transit"
+      />
     </div>
     <div className="align details2">
       <div>
@@ -75,6 +86,7 @@ const Projects = () => (
       <img
         className="giphyOne"
         src="https://media.giphy.com/media/Ah9wTBkfaxZpKuUwpI/giphy.gif"
+        alt="seattle-transit-gif"
       />
     </div>
     <hr className="line divider2" />
@@ -88,6 +100,7 @@ const Projects = () => (
         src="https://media.giphy.com/media/1kTOfry9f5sxuYM3Fa/giphy.gif"
         width={`${900}em`}
         height={`${200}em`}
+        alt="bug-invaders-gif"
       />
     </div>
     <div className="align details3">
