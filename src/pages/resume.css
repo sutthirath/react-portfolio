@@ -47,3 +47,13 @@
 .resume-i {
   padding-left: 5px;
 }
+
+@media screen and (max-width: 900px) {
+  .doc {
+    width: 100vw;
+  }
+
+  .doc-wrapper {
+    display: block;
+  }
+}

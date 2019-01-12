@@ -24,3 +24,13 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 900px) {
+  .Nav {
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.85em;
+  }
+}

@@ -7,7 +7,7 @@ import logo from "../images/sean_flash.jpg";
 const Header = () => (
   <div className="Header">
     <Link to="/">
-      <div>
+      <div className="logo-container">
         <img className="logo-img" src={logo} alt="logo" />
       </div>
     </Link>

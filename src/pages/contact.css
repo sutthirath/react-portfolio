@@ -46,7 +46,6 @@ section {
   justify-content: center;
   width: 40vw;
   height: 90vh;
-  padding-right: 30px;
 }
 
 .contact-input {
@@ -67,4 +66,11 @@ section {
 
 .hidden {
   visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-form {
+    margin: 0 auto;
+    width: 90vw;
+  }
 }
