@@ -5,7 +5,7 @@ import pdf from "../images/resume.pdf";
 class Resume extends React.Component {
   handlePrint = () => {
     var myWindow = window.open("", "Resume", "width=800, height=600");
-    myWindow.document.write(`<img src="https://i.imgur.com/WUboXzK.png" />`);
+    myWindow.document.write(`<img src="https://i.imgur.com/gCutpn5.png" />`);
     myWindow.document.close();
     myWindow.focus();
     myWindow.print();
@@ -32,7 +32,7 @@ class Resume extends React.Component {
         <div className="doc-wrapper">
           <div className="doc-container">
             <img
-              src="https://i.imgur.com/WUboXzK.png"
+              src="https://i.imgur.com/gCutpn5.png"
               className="doc"
               alt="resume"
             />
