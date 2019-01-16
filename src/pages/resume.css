@@ -1,11 +1,11 @@
 .Resume {
   margin: auto;
+  width: 100vw;
   display: inline-block;
 }
 
 .resume-btns {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .doc-wrapper {

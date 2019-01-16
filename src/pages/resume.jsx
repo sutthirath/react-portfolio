@@ -15,14 +15,12 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="Resume">
-        <div className="resume-btns">
-          <div className="center-btn">
+        <div>
+          <div className="resume-btns">
             <button onClick={this.handlePrint} className="resume-btn">
               Print
               <i className="fas fa-print resume-i" />
             </button>
-          </div>
-          <div>
             <a href={pdf} download="SeanVilaysaneResume">
               <button className="resume-btn">
                 Download
