@@ -6,7 +6,7 @@ import yocal_logo from "../images/yocal_logo.png";
 const Projects = () => (
   <div className="Projects">
     {/* Yocal Section */}
-    <div className="center hero1">
+    <div className="center hero hero1">
       <img
         src={yocal_logo}
         width={`${300}em`}
@@ -21,7 +21,7 @@ const Projects = () => (
         alt="yocal-gif"
       />
     </div>
-    <div className="align details1">
+    <div className="align details details1">
       <div>
         <h4>A Social App for Curious Travelers.</h4>
         <p>
@@ -49,7 +49,7 @@ const Projects = () => (
     </div>
     <hr className="line divider1" />
     {/* Seattle Transit Section */}
-    <div className="center hero2">
+    <div className="center hero hero2">
       <img
         src={seattle_transit_icon}
         width={`${350}em`}
@@ -57,7 +57,7 @@ const Projects = () => (
         alt="seattle-transit"
       />
     </div>
-    <div className="align details2">
+    <div className="align details details2">
       <div>
         <h4>Simple and Easy to Use Public Transit App.</h4>
         <p>
@@ -91,7 +91,7 @@ const Projects = () => (
     </div>
     <hr className="line divider2" />
     {/* Bug Invaders Section */}
-    <div className="center hero3">
+    <div className="center hero hero3">
       <h2 className="bug-invaders">BUG INVADERS</h2>
     </div>
     <div className="center giph3">
@@ -103,7 +103,7 @@ const Projects = () => (
         alt="bug-invaders-gif"
       />
     </div>
-    <div className="align details3">
+    <div className="align details details3">
       <div>
         <h4>"Addictive" "Fun" "Cool Game"</h4>
         <p>

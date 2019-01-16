@@ -12,12 +12,6 @@ const Home = () => (
               I'm a full stack developer.
             </p>
           </section>
-          <section className="card card-right about2">
-            <p className="card-text">
-              Creative, is what my peers would describe me. I like to think
-              outside the box and create new circles.
-            </p>
-          </section>
         </div>
       </div>
     </div>

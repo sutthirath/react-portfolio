@@ -1,7 +1,7 @@
 .Projects {
   display: grid;
   grid-template-rows: 1fr 1fr 1px 1fr 1fr 1px 1fr 1fr 1px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
     ". hero1    hero1     hero1     ."
     ". giph1    .         details1  ."
@@ -123,87 +123,32 @@
   margin-left: 10px;
 }
 
-/* .Projects {
-  margin: auto;
-  width: 80vw;
+@media screen and (max-width: 900px) {
+  .Projects {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1px 1fr 1fr 1fr 1px 1fr 1fr 1fr 1px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero1"
+      "details1"
+      "giph1"
+      "divider1"
+      "hero2"
+      "details2"
+      "giph2"
+      "divider2"
+      "hero3"
+      "details3"
+      "giph3"
+      "divider3";
+  }
+
+  .details {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .bug-invaders {
+    font-size: 3.5em;
+  }
 }
-
-.project-section {
-  margin: auto;
-}
-
-.section-hero1 {
-  margin: 2em 0;
-}
-
- .section-info1 {
-  margin: 4em;
-} 
-
-.section-info2 {
-  padding-bottom: 4em;
-}
-
-.section-hero3 {
-  padding-top: 4em;
-  padding-bottom: 2em;
-}
-
-.section-info3 {
-  padding-bottom: 2em;
-}
-
-.bug-invaders {
-  font-family: "luckiest guy";
-  font-size: 4em;
-  -webkit-text-stroke: 1px black;
-  color: #5da81f;
-  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.bug-giphy {
-  width: 25em;
-}
-
-.details {
-  padding: 0 50px;
-}
-
-.giphy-container {
-  transform: rotate(90deg);
-}
-
-.giphy {
-  width: 20em;
-}
-
-.projects-btn {
-  padding: 6px 12px;
-  border-radius: 6px;
-  box-shadow: 0px 1px 1px #3d3d3d8f;
-}
-
-.projects-btn:hover {
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.1);
-  background: -webkit-linear-gradient(
-    rgba(255, 0, 183, 0.694),
-    rgb(255, 111, 0)
-  );
-  background-clip: border-box;
-  -webkit-background-clip: border-box;
-}
-
-.projects-btn:focus {
-  outline: none;
-}
-
-.right-btn {
-  margin-left: 10px;
-}
-
-.divider {
-  margin: 20px;
-} 
-*/
