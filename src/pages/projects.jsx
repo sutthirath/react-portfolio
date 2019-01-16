@@ -27,8 +27,8 @@ const Projects = () => (
         <p>
           Explore the unknown or get help from locals. Yocal is mobile app using
           the Foursquare API to search hundreds of local businesses. Users can
-          signup to become a yocal in their area to guide travellers. Real-time
-          chat is intergrated to connect users with yocals to get advise when
+          signup to become a yocal in their area to guide travelers. Real-time
+          chat is integrated to connect users with yocals to get advise when
           they're out adventuring.
         </p>
         <a
@@ -107,8 +107,8 @@ const Projects = () => (
       <div>
         <h4>"Addictive" "Fun" "Cool Game"</h4>
         <p>
-          Lightweight web browser game that is built with intuiutive javascript.
-          No extra libraries or frameworks invovled. Delivering a simple but
+          Lightweight web browser game that is built with intuitive javascript.
+          No extra libraries or frameworks involved. Delivering a simple but
           enjoyable experience.
         </p>
         <a
