@@ -1,11 +1,12 @@
 import React from "react";
 import "./resume.css";
+import resumeImg from "../images/resume_img.svg";
 import pdf from "../images/resume.pdf";
 
 class Resume extends React.Component {
   handlePrint = () => {
-    var myWindow = window.open("", "Resume", "width=800, height=600");
-    myWindow.document.write(`<img src="https://i.imgur.com/gCutpn5.png" />`);
+    var myWindow = window.open("", "Resume", "width=595, height=842");
+    myWindow.document.write(`<img src="https://i.imgur.com/JY6WORv.png" />`);
     myWindow.document.close();
     myWindow.focus();
     myWindow.print();
@@ -31,11 +32,7 @@ class Resume extends React.Component {
         </div>
         <div className="doc-wrapper">
           <div className="doc-container">
-            <img
-              src="https://i.imgur.com/gCutpn5.png"
-              className="doc"
-              alt="resume"
-            />
+            <img src={resumeImg} className="doc" alt="resume" />
           </div>
         </div>
       </div>
