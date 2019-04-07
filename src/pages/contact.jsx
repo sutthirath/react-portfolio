@@ -56,7 +56,7 @@ class Contact extends React.Component {
             <form
               method="post"
               name="portfolio-msg"
-              action={this.handleForm}
+              onSubmit={this.handleForm}
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
