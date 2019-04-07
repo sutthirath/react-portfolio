@@ -16,7 +16,11 @@ class Contact extends React.Component {
     });
   }
 
-  handleForm = () => {
+  handleForm = async () => {
+    return await setTimeout(this.formSubmit, 2400);
+  };
+
+  formSubmit = () => {
     this.setState({
       valid: true
     });
