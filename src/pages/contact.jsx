@@ -8,7 +8,6 @@ class Contact extends React.Component {
     this.state = {
       valid: false
     };
-    this.handleForm = this.handleForm.bind(this);
   }
 
   componentWillUnmount() {
@@ -17,11 +16,11 @@ class Contact extends React.Component {
     });
   }
 
-  handleForm() {
+  handleForm = () => {
     this.setState({
       valid: true
     });
-  }
+  };
 
   render() {
     if (this.state.valid) return <Success />;
@@ -57,7 +56,7 @@ class Contact extends React.Component {
             <form
               method="post"
               name="portfolio-msg"
-              action={() => this.handleForm()}
+              action={this.handleForm}
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
