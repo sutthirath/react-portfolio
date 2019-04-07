@@ -6,18 +6,44 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      valid: false
+      valid: false,
+      nameField: false,
+      emailField: false,
+      textField: false
     };
   }
 
   componentWillUnmount() {
     this.setState({
-      valid: false
+      valid: false,
+      namefield: false,
+      emailField: false,
+      textField: false
     });
   }
 
   handleForm = async () => {
-    return await setTimeout(this.formSubmit, 2400);
+    if (this.state.nameField && this.state.emailField && this.state.textField) {
+      return await setTimeout(this.formSubmit, 2400);
+    }
+  };
+
+  handleInput1 = () => {
+    this.setState({
+      nameField: true
+    });
+  };
+
+  handleInput2 = () => {
+    this.setState({
+      emailField: true
+    });
+  };
+
+  handleInput3 = () => {
+    this.setState({
+      textField: true
+    });
   };
 
   formSubmit = () => {
@@ -60,7 +86,6 @@ class Contact extends React.Component {
             <form
               method="post"
               name="portfolio-msg"
-              onSubmit={this.handleForm}
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
@@ -75,6 +100,7 @@ class Contact extends React.Component {
                   className="contact-input"
                   type="text"
                   name="name"
+                  onChange={this.handleInput1}
                   required
                 />
               </label>
@@ -88,6 +114,7 @@ class Contact extends React.Component {
                   className="contact-input"
                   type="email"
                   name="email"
+                  onChange={this.handleInput2}
                   required
                 />
               </label>
@@ -99,10 +126,15 @@ class Contact extends React.Component {
                 className="contact-textarea"
                 placeholder="send me a message"
                 name="message"
+                onChange={this.handleInput3}
                 required
               />
               <div data-netlify-recaptcha="true" />
-              <button className="send-btn" type="submit">
+              <button
+                className="send-btn"
+                type="submit"
+                onClick={this.handleForm}
+              >
                 Send
               </button>
             </form>
