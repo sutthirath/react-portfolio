@@ -28,7 +28,7 @@ class App extends Component {
               exact
               path="/success"
               render={() => {
-                if (!this.getSuccess) {
+                if (this.getSuccess) {
                   return <Success getSuccess={this.getSuccess} />;
                 }
               }}

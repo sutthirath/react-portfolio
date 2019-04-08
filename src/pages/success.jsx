@@ -6,11 +6,15 @@ class Success extends React.Component {
     super(props);
     this.state = {
       count: 10,
-      redirect: false
+      redirect: false,
+      access: false
     };
   }
 
   componentDidMount() {
+    this.setState({
+      access: true
+    });
     this.countdown = setInterval(() => this.tick(), 1000);
   }
 
@@ -23,6 +27,14 @@ class Success extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.setState({
+      count: 10,
+      redirect: false,
+      access: false
+    });
+  }
+
   tick() {
     this.setState({
       count: this.state.count - 1
@@ -30,9 +42,9 @@ class Success extends React.Component {
   }
 
   render() {
-    const { redirect } = this.state;
+    const { redirect, access } = this.state;
     const { getSuccess } = this.props;
-    getSuccess(redirect);
+    getSuccess(access);
     if (redirect) {
       return <Redirect to="/" />;
     }
