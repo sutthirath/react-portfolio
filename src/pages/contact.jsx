@@ -8,7 +8,7 @@ class Contact extends React.Component {
   }
 
   componentWillUnmount() {
-    setTimeout(this.access, 2000);
+    setTimeout(this.access, 10000);
   }
 
   access = () => {
