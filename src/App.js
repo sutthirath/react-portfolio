@@ -10,7 +10,7 @@ import Success from "./pages/success.jsx";
 
 class App extends Component {
   getSuccess = data => {
-    console.log("Access Restricted: ", data);
+    console.log("User Access: ", data);
     return data;
   };
 
@@ -28,7 +28,7 @@ class App extends Component {
               exact
               path="/success"
               render={() => {
-                if (this.getSuccess) {
+                if (this.getSuccess()) {
                   return <Success getSuccess={this.getSuccess} />;
                 }
               }}
