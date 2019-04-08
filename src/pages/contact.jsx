@@ -2,20 +2,6 @@ import React from "react";
 import "./contact.css";
 
 class Contact extends React.Component {
-  componentDidMount() {
-    let { getSuccess } = this.props;
-    getSuccess(true);
-  }
-
-  componentWillUnmount() {
-    setTimeout(this.access, 10000);
-  }
-
-  access = () => {
-    let { getSuccess } = this.props;
-    getSuccess(false);
-  };
-
   render() {
     return (
       <div>
