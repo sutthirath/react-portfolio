@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Nav from "./nav.jsx";
 import "./header.css";
-import logo from "../images/sean_flash.jpg";
+import logo from "../images/portfolio_logo.svg";
 
 const Header = () => (
   <div className="Header">
