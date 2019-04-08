@@ -9,6 +9,11 @@ import Contact from "./pages/contact.jsx";
 import Success from "./pages/success.jsx";
 
 class App extends Component {
+  getSuccess = data => {
+    console.log("Access Restricted: ", data);
+    return data;
+  };
+
   render() {
     return (
       <Router>
@@ -19,7 +24,15 @@ class App extends Component {
             <Route exact path="/projects" render={() => <Projects />} />
             <Route exact path="/resume" render={() => <Resume />} />
             <Route exact path="/contact" render={() => <Contact />} />
-            <Route exact path="/success" render={() => <Success />} />
+            <Route
+              exact
+              path="/success"
+              render={() => {
+                if (!this.getSuccess) {
+                  return <Success getSuccess={this.getSuccess} />;
+                }
+              }}
+            />
           </Switch>
           <Footer />
         </div>

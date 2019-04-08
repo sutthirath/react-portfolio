@@ -31,6 +31,8 @@ class Success extends React.Component {
 
   render() {
     const { redirect } = this.state;
+    const { getSuccess } = this.props;
+    getSuccess(redirect);
     if (redirect) {
       return <Redirect to="/" />;
     }
