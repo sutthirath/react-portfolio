@@ -12,7 +12,7 @@ class Success extends React.Component {
   }
 
   componentDidMount() {
-    // this.countdown = setInterval(() => this.tick(), 1000);
+    this.countdown = setInterval(() => this.tick(), 1000);
   }
 
   componentDidUpdate() {
@@ -47,8 +47,9 @@ class Success extends React.Component {
     backgroundColor: "rgb(66, 65, 82)"
   };
 
-  banner = {
-    padding: "2vh"
+  animate = {
+    padding: "2vh",
+    color: "greenyellow"
   };
 
   card = {
@@ -78,16 +79,8 @@ class Success extends React.Component {
     }
     return (
       <div className="Success" style={this.flex}>
-        <div className="success-banner" style={this.banner}>
-          <h1
-            style={{
-              color: "greenyellow",
-              transition: "all 1s ease-in-out",
-              transform: "scale(1.3)"
-            }}
-          >
-            Success, your message was sent!
-          </h1>
+        <div className="success-banner" style={this.animate}>
+          <h1>Success, your message was sent!</h1>
         </div>
         <div className="success-msg" style={this.card}>
           <div style={this.msg}>
