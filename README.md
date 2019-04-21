@@ -1,5 +1,4 @@
-<p style="text-align:center"><img src="https://i.imgur.com/V5SngcU.png" alt="Portfolio Logo"/></p>
+<img src="https://i.imgur.com/V5SngcU.png" alt="Portfolio Logo"/>
 
-[View My Portfolio](https://www.seanvilaysane.com).
-
+*[View My Portfolio](https://www.seanvilaysane.com)
 
