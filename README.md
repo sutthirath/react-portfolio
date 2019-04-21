@@ -2,8 +2,6 @@
 
 # [View My Portfolio](https://www.seanvilaysane.com)
 
-
-
-### TECHNOLOGIES USED:
-
+### TECHNOLOGIES USED
 <img src="https://i.imgur.com/Yfc0dYG.png" alt="Portfolio Logo"/>
+
